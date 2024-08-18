@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card-header">
+        <h3 class="card-title h1" id="TİTLE">todo App</h3>
+    </div>
+    <ul id="task-list">
+        <li>
+            Görev 1
+        </li>
+        <li>
+            Görev 2
+        </li>
+        <li>
+            Görev 3
+        </li>
+    </ul>
+    <script>
+        let sonuc;
+        sonuc = document.getElementById("TİTLE");
+        sonuc = document.getElementById("TİTLE").id;
+        sonuc = document.getElementById("TİTLE").className;
+        sonuc = document.getElementById("TİTLE").classList;
+
+        document.getElementById("TİTLE").style.fontSize = "30px"
+        document.getElementById("TİTLE").style.color = "red"
+        // document.getElementById("TİTLE").style.display="none"
+
+
+        document.getElementById("TİTLE").innerText="Todo app"
+        document.getElementById("TİTLE").innerHTML="<p>Todo app</p>"
+
+        sonuc= document.querySelector("#TİTLE");
+        sonuc= document.querySelector(".card-header");
+        sonuc=document.querySelector("div");
+
+        sonuc=document.querySelector("li");                 // Bulduğu ilk li aracını getirir.
+        sonuc=document.querySelector("li:first-child");     // İlk li aracını getirir.
+        sonuc=document.querySelector("li:last-child");      // Bulduğu son li elemanını getirir.
+        sonuc=document.querySelector("li:nth-child(2)");    // İstediğimiz sıradaki li elemanını getirir.
+        
+
+        console.log(sonuc);
+    </script>
+</body>
+</html>
